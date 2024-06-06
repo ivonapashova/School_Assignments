@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Programming Languages</title>
+        <link rel="icon" type="image/x-icon" href="favicon.jpg">
+
+        <style>
+          body {background-color: powderblue;}
+          </style>
+
+    </head>
+<body>
+
+<h2>Fill out the form (optional)</h2>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="">
+</form>
+
+<br>
+
+
+<form action="/action_page.php">
+    <label for="datemax">Date of birth:</label>
+    <input type="date" id="datemax" name="datemax" max="1979-12-31"><br>
+
+<br>
+<br>
+<br>
+
+<form action="/action_page.php">
+    <label for="phone">Enter a phone number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="+359 88 8888 888" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+  </form>
+  
+  
+<br>
+
+  <p>Which city are you from?</p>
+  <form>
+    <input list="cities" name="cities">
+    <datalist id="cities">
+      <option value="Sofia">
+      <option value="Varna">
+      <option value="Burgas">
+      <option value="Plovdiv">
+      <option value="Pleven">
+    </datalist>
+  </form>
+
+  <br>
+  <br>
+
+<p>Which coding languages do you know?</p>
+<form action="Sait.html">
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> Html</label><br>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> CSS</label><br>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> C#</label><br>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> Java</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> JavaScript</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> Python</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> None </label><br><br>
+    <input type="submit" value="Submit">
+  </form> 
+
+  
+</body>
+</html>
