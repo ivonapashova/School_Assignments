@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Иновации за София</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #18339f;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #2a88b6;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #18339f;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2a88b6;
+        }
+
+        button {
+            background-color: #2a88b6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #18339f;
+        }
+
+        footer {
+            background-color: #18339f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        #moreInfo {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e0ffe0;
+            border-left: 4px solid #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Иновации за София</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Начало</a></li>
+                <li><a href="да.html">Идеи за подобрение</a></li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Ресурси</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <img src="sofia.jpg" width="290" height="240" align="right" >
+            <h2>София - Сърцето на България</h2>
+            <p>София е един от най-старите градове в Европа, с история, датираща от над 7 000 години. 
+            Столицата на България е динамичен и модерен град, който съчетава богато културно наследство и бързоразвиваща се инфраструктура.
+            Разположена в подножието на планината Витоша, София предлага уникална комбинация от красива природа и съвременен градски живот.
+            През вековете София е била дом на различни цивилизации - от траките и римляните до византийците и османците, оставяйки след себе си безценни архитектурни и културни забележителности. Сред тях са древната крепост „Сердика“, храм-паметникът „Свети Александър Невски“ и ротондата „Свети Георги“.
+            Днес София е икономически и културен център на страната, място, където иновациите и технологиите намират своето приложение в ежедневието на хората.</p>
+            <button onclick="showMore('safetyInfo')">Транспорта в София</button>
+            <div id="safetyInfo" class="moreInfo">
+                <h2>История на Транспорта в София</h2>
+                <p>Транспортната система на София също има дълга и интересна история.
+                Първите организирани форми на обществен транспорт се появяват в края на 19-ти век.
+                През 1901 г. тръгва първият конски трамвай, а през 1905 г. е пуснат и първият електрически трамвай, който бързо се превръща в основно средство за придвижване в града.
+                С течение на времето транспортната мрежа се разраства и модернизира.
+                През 1951 г. е открит и първият тролейбусен маршрут, а през 1998 г. е пуснато метрото – един от най-модерните и екологични начини за придвижване в София днес.
+                Днес столицата разполага с разнообразни транспортни възможности: трамваи, автобуси, тролейбуси и метро, като усилията са насочени към тяхното непрекъснато развитие и модернизация.
+                Една от важните цели на града е да насърчи използването на екологично чисти превозни средства и да предостави по-добри условия за велосипедисти и пешеходци.</p>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>© Проект на Ивона Пашова</p>
+    </footer>
+
+    <script>
+        function showMore(id) {
+            const moreInfo = document.getElementById(id);
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
